@@ -9,7 +9,7 @@ pipeline {
         stage('Build Docker Image') {
             steps{
                 script{
-                    sh 'sudo docker build -t mwene/wordsmith-web .'
+                    sh 'docker build -t mwene/wordsmith-web .'
                 }
             }
         }

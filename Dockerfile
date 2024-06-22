@@ -5,7 +5,7 @@ FROM node:16
 WORKDIR /usr/src/app
 
 # Copy the application files to the container
-COPY . .
+COPY /static .
 
 # Install a simple web server to serve the AngularJS application
 RUN npm install -g http-server
